@@ -1,6 +1,6 @@
 <?php
 /*
-        https://www.shopd.ir
+        https://www.shopid.ir
         https://github.com/shopid-dev
         alaeebehnam@gmail.com
         https://t.me/theycallmebehnam
