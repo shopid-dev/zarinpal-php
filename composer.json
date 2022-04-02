@@ -1,0 +1,16 @@
+{
+    "name": "shopid/zarinpal",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "shopid\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alaeebehnam",
+            "email": "alaeebehnam@gmail.com"
+        }
+    ],
+    "require": {}
+}
