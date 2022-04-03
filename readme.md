@@ -4,6 +4,9 @@ Installation
 ```
 composer require shopid/zarinpal
 ```
+on virgool.io :
+https://virgool.io/@shopid/zarinpal-agkiqa7tplra
+
 
 ```php
 <?php
