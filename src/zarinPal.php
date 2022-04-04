@@ -51,7 +51,9 @@ class zarinPal
         curl_close($ch);
 
         if ($err) {
-            throw new \Exception(json_encode(["error" => "cURL Error #:" . $err]));
+            
+            throw new \Exception(json_encode(["error" => ["code"=>9999,"message"=>$err]] ));
+            
         } else {
             if (empty($result['errors'])) {
                 if ($result['data']['code'] == 100) {
@@ -86,7 +88,9 @@ class zarinPal
         $result = json_decode($result, true);
 
         if ($err) {
-            throw new \Exception(json_encode(["error" => "cURL Error #:" . $err]));
+            
+            throw new \Exception(json_encode(["error" => ["code"=>9999,"message"=>$err]] ));
+            
         } else {
             if (isset($result['errors']) && count($result['errors']) > 0) {
                 throw new \Exception(json_encode(["error" => $result['errors']]));
