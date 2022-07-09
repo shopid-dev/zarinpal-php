@@ -17,7 +17,6 @@ class zarinPal
     function __construct($param)
     {
 
-        $this->callBackUrl = isset($param['callBackUrl']) ? $param['callBackUrl'] : null;
         $this->merchantId = $param['merchantId'];
     }
 
@@ -27,7 +26,7 @@ class zarinPal
         $data = array(
             "merchant_id" => $this->merchantId,
             "amount" => $param['amount'],
-            "callback_url" => $this->callBackUrl,
+            "callback_url" => $param['callbackurl'],
             "description" => $param['description'],
             "metadata" => ["email" => $param['email'], "mobile" => $param['mobile']],
         );
