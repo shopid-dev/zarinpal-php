@@ -17,7 +17,7 @@ class zarinPal
     function __construct($param)
     {
 
-        $this->callBackUrl = $param['callBackUrl'];
+        $this->callBackUrl = isset($param['callBackUrl']) ? $param['callBackUrl'] : null;
         $this->merchantId = $param['merchantId'];
     }
 
